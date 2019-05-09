@@ -11,6 +11,7 @@ import org.aspectj.lang.reflect.MethodSignature;
 import java.lang.reflect.Method;
 
 /**
+ * 实现防止按钮连续点击
  * @author jiang zhu on 2019/4/19
  */
 @Aspect
@@ -22,7 +23,7 @@ public class SingleClickAspect {
      * 注意：这里me.baron.test.annotation.SingleClick需要替换成
      * 你自己项目中SingleClick这个类的全路径哦
      */
-    @Pointcut("execution(@zj.it.bhne.androidaop.SingleClick * *(..))")
+    @Pointcut("execution(@com.zj.singclick.SingleClick * *(..))")
     public void methodAnnotated() {}
 
     /**
@@ -48,6 +49,7 @@ public class SingleClickAspect {
             return;
         }
         SingleClick singleClick = method.getAnnotation(SingleClick.class);
+
         // 判断是否快速点击
         if (!XClickUtil.isFastDoubleClick(view, singleClick.value())) {
             // 不是快速点击，执行原方法
