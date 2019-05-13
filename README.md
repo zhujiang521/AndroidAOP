@@ -32,8 +32,9 @@ implementation 'com.github.zhujiang521:AndroidAOP:1.0.1'
 ```
 
 <h2>使用方法</h2>
-直接在按钮的点击事件上面添加注解即可使用：
-在java中：
+直接在按钮的点击事件上面添加注解即可使用：</br>
+在java中：</br>
+
 ```
 @SingleClick
     @Override
