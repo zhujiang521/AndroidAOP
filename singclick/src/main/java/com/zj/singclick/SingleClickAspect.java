@@ -49,7 +49,6 @@ public class SingleClickAspect {
             return;
         }
         SingleClick singleClick = method.getAnnotation(SingleClick.class);
-
         // 判断是否快速点击
         if (!XClickUtil.isFastDoubleClick(view, singleClick.value())) {
             // 不是快速点击，执行原方法

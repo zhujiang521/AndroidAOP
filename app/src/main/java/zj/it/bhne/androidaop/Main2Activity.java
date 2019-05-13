@@ -1,13 +1,16 @@
 package zj.it.bhne.androidaop;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.blankj.utilcode.util.ToastUtils;
 import com.zj.singclick.SingleClick;
+
+
 
 public class Main2Activity extends AppCompatActivity implements View.OnClickListener {
 
@@ -21,13 +24,13 @@ public class Main2Activity extends AppCompatActivity implements View.OnClickList
     }
 
     private void initView() {
-        zhu = (Button) findViewById(R.id.zhu);
+        zhu = findViewById(R.id.zhu);
 
         zhu.setOnClickListener(this);
     }
 
-    @Override
     @SingleClick
+    @Override
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.zhu:

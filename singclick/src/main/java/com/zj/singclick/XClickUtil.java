@@ -5,7 +5,7 @@ import android.view.View;
 /**
  * @author jiang zhu on 2019/4/19
  */
-final class XClickUtil {
+public final class XClickUtil {
 
     /**
      * 最近一次点击的时间
@@ -23,7 +23,7 @@ final class XClickUtil {
      * @param intervalMillis  时间间期（毫秒）
      * @return  true:是，false:不是
      */
-    static boolean isFastDoubleClick(View v, long intervalMillis) {
+    public static boolean isFastDoubleClick(View v, long intervalMillis) {
         int viewId = v.getId();
         long time = System.currentTimeMillis();
         long timeInterval = Math.abs(time - mLastClickTime);
