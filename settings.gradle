@@ -1,1 +1,2 @@
 include ':app', ':singclick'
+include ':test'

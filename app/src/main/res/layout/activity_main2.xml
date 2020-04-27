@@ -16,7 +16,7 @@
         android:id="@+id/btnStop"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="禁止点击"
+        android:text="跳转新包"
         android:layout_gravity="center"
         android:onClick="btnStop"/>
 

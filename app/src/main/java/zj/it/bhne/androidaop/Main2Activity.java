@@ -1,6 +1,7 @@
 package zj.it.bhne.androidaop;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -10,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.blankj.utilcode.util.ToastUtils;
 import com.zj.singclick.SingleClick;
+import com.zj.test.TestActivity;
 
 
 public class Main2Activity extends AppCompatActivity{
@@ -42,6 +44,7 @@ public class Main2Activity extends AppCompatActivity{
     }
 
     public void btnStop(View view) {
+        startActivity(new Intent(this, TestActivity.class));
     }
 
     public void btnInter(View view) {
