@@ -5,9 +5,35 @@
     android:orientation="vertical">
 
     <Button
-        android:id="@+id/zhu"
+        android:id="@+id/btnDialog"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="zz"/>
+        android:text="弹窗等待"
+        android:layout_gravity="center"
+        android:onClick="btnDialog"/>
+
+    <Button
+        android:id="@+id/btnStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="禁止点击"
+        android:layout_gravity="center"
+        android:onClick="btnStop"/>
+
+    <Button
+        android:id="@+id/btnInter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="判断时间方式"
+        android:layout_gravity="center"
+        android:onClick="btnInter"/>
+
+    <Button
+        android:id="@+id/btnAop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="AOP方式"
+        android:onClick="btnAop"/>
 
 </LinearLayout>
