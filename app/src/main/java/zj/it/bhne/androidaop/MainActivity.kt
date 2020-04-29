@@ -16,6 +16,19 @@ class MainActivity : AppCompatActivity() ,View.OnClickListener{
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         btnClick.setOnClickListener(this)
+        initView()
+    }
+
+    private fun initView() {
+        btnKuoZhan.setSafeListener {
+            ToastUtils.showShort("222")
+            Log.e("kuozhan","wwww")
+        }
+
+        btnKuoZhanClick.click {
+            ToastUtils.showShort("ss")
+            Log.e("kuozhan","呵呵呵")
+        }
     }
 
 
@@ -25,7 +38,7 @@ class MainActivity : AppCompatActivity() ,View.OnClickListener{
             when(v.id){
                 R.id.btnClick->{
                     ToastUtils.showShort("哈哈哈")
-                    Log.e("刘佩希","wwww")
+                    Log.e("ee","wwww")
                 }
             }
         }

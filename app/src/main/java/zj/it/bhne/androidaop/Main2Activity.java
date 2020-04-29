@@ -59,4 +59,7 @@ public class Main2Activity extends AppCompatActivity{
         Log.e(TAG, "btnAop");
     }
 
+    public void btnKotlin(View view) {
+        startActivity(new Intent(this,MainActivity.class));
+    }
 }

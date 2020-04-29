@@ -20,5 +20,6 @@ class TestActivity : AppCompatActivity(), View.OnClickListener {
     override fun onClick(v: View) {
         Toast.makeText(this,"测试",Toast.LENGTH_SHORT).show()
         Log.e("测试时","cee")
+        //startActivity<TestActivity>(this){}
     }
 }

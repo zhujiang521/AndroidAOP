@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center_horizontal"
     android:orientation="vertical">
 
     <Button
@@ -9,5 +10,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="重复点击"/>
+
+    <Button
+        android:id="@+id/btnKuoZhan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="扩展新方法实现"/>
+
+    <Button
+        android:id="@+id/btnKuoZhanClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="扩展OnClick方法实现"/>
 
 </LinearLayout>
