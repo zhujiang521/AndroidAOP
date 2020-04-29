@@ -27,6 +27,7 @@ apply plugin: 'android-aspectjx'
 ```
 
 4、在app的build.gradle中的dependencies添加
+[![](https://jitpack.io/v/zhujiang521/AndroidAOP.svg)](https://jitpack.io/#zhujiang521/AndroidAOP)
 ```
 implementation 'com.github.zhujiang521:AndroidAOP:1.0.1'
 ```
