@@ -79,3 +79,11 @@ implementation 'com.github.zhujiang521:AndroidAOP:1.0.1'
 ```
 
 OK。
+
+新增了Kotlin的判断重复的方法，大家可以按照下面的方法直接进行调用，比写注解更加灵活方便：
+```
+btnKuoZhan.setSafeListener {
+            ToastUtils.showShort("222")
+            Log.e("kuozhan","wwww")
+        }
+```
