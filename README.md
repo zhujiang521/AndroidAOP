@@ -30,7 +30,7 @@ apply plugin: 'android-aspectjx'
 [![](https://jitpack.io/v/zhujiang521/AndroidAOP.svg)](https://jitpack.io/#zhujiang521/AndroidAOP)
 
 ```
-implementation 'com.github.zhujiang521:AndroidAOP:1.0.1'
+implementation 'com.github.zhujiang521:AndroidAOP:1.1.1'
 ```
 
 <h2>使用方法</h2>
